@@ -9,6 +9,7 @@ export class AppComponent {
   name!: string;
   date!: string;
   amount!: number;
+  miles!: number;
 
   onNameChange(value:string){
     this.name = value;
@@ -19,5 +20,10 @@ export class AppComponent {
 
   onAmountChange(value:string){
     this.amount = parseFloat(value);
+  }
+
+/* GENERATING A PIPE */
+  onMilesChange(value:string){
+    this.miles = parseFloat(value);
   }
 }
